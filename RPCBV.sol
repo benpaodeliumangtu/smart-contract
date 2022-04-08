@@ -273,4 +273,8 @@ contract RPCBV {
         }
     }
     
+    function payment(address _address) public payable {
+        _address.transfer(msg.value);
+    }
+    
 }
